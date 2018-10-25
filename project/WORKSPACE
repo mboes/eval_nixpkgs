@@ -14,12 +14,12 @@ nixpkgs_git_repository(
 nixpkgs_package(
     name= "python-2.7.15",
     attribute_path= "python27Packages.python",
-    repositories = {"@nixpkgs": "nixpkgs"}
+    repositories = { "nixpkgs": "@nixpkgs//:default.nix" },
 )
 
 nixpkgs_package(
-    name = "python2.7-Flask-1.0.2",
+    name= "python2.7-Flask-1.0.2",
     attribute_path= "python27Packages.flask",
-    repositories = { "@nixpkgs": "nixpkgs" }
+    repositories = { "nixpkgs": "@nixpkgs//:default.nix" },
 )
 
